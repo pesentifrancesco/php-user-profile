@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilo Utente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2> Crea il tuo profilo </h2>
+
+<form action="profilo.php" method=post>
+<p>
+    <label for ="nome ">Nome : </label>
+    <input type="text" name="nome" required>
+</p>
+
+<p>
+    regione:
+    <input type="radio" name="regione" value="Nord" checked> Nord
+    <input type="radio" name="regione"value="Centro" checked > Centro
+    <input type="radio" name="regione"value="Sud" checked > Sud
+
+</p>
+ <p>
+    <input type="checkbox" name="interessi[]" value="Sport"> Sport
+    <input type="checkbox" name="interessi[]" value="Musica">  Musica
+    <input type="checkbox" name="interessi[]" value="viaggi"> Viaggi
+    <input type="checkbox" name="interessi[]" value="cucinare"> Cucinare
+
+</p>
+
+<input type="submit" value="Salva Profilo">
+
+</form>
+
+<div class="container">
+    <div>
+        <h1>musica</h1>
+        <img 
+            src="https://www.105.net/resizer/1000/683/true/2025_04_11/43_ig_%40sferaebbasta_%40fuckshiva-1744362570928.png--sfera_ebbasta_e_shiva__esce_il_joint_album__santana_money_gang_.png?1744362571080" 
+            alt="Sfera Ebbasta e Shiva - Santana Money Gang"
+            width="500">
+    </div>
+  
+    <div>
+        <h1> Viaggi</h1>
+        <img 
+            src="https://acentro.it/wp-content/uploads/2019/11/viaggi-vacanze-acentro-turismo-mondo1.jpg" 
+            alt="Viaggi"
+            width="500">
+    </div>
+    
+    <div>
+        <h1>Viaggi</h1>
+        <img 
+        src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/471000/471633-Washington-Dc.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh" 
+        alt="Washington D.C."
+        width="500">
+    </div>
+  
+</div>
+  
+</body>
+</html>
+
+
